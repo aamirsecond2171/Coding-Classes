@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Structured Query Language (SQL)</title>
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background-color: #f4f4f4;
+            color: #222;
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headings */
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #1e3a8a;
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraph */
+        p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Introduction */
+        .intro {
+            background-color: #eef4ff;
+            padding: 20px;
+            border-left: 5px solid #1e3a8a;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Details */
+        details {
+            margin: 12px 0;
+            padding: 15px;
+            background-color: #e8f0fe;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        details:hover {
+            background-color: #dbeafe;
+        }
+
+        /* Summary */
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #1e3a8a;
+            font-size: 1rem;
+        }
+
+        /* Horizontal Line */
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 2px solid #ddd;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px 15px;
+                border-radius: 8px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+                text-align: left;
+            }
+
+            .intro {
+                padding: 15px;
+            }
+
+            details {
+                padding: 12px;
+            }
+
+            summary {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Here you are....</h1>
+
+        <h2>
+            So you recently started to know about the basics of coding.
+        </h2>
+
+        <div class="intro">
+
+            <p>
+                Coding seekhne ke liye sabse best aur easy language
+                <b>SQL</b> hota hai.
+                SQL ka full form <b>Structured Query Language</b> hai.
+            </p>
+
+            <p>
+                SQL ka use database ke saath kaam karne ke liye kiya jata hai.
+                SQL mein hum simple English keywords ka use karke database
+                ke saath different operations perform kar sakte hain.
+            </p>
+
+        </div>
+
+        <h3>Some Common SQL Commands</h3>
+
+        <details>
+            <summary>CREATE</summary>
+            <p>
+                CREATE ka use database mein objects, jaise tables,
+                create karne ke liye hota hai.
+            </p>
+        </details>
+
+        <details>
+            <summary>ALTER</summary>
+            <p>
+                ALTER ka use existing database objects ko modify
+                karne ke liye hota hai.
+            </p>
+        </details>
+
+        <details>
+            <summary>INSERT</summary>
+            <p>
+                INSERT ka use table ke andar data add karne ke
+                liye hota hai.
+            </p>
+        </details>
+
+        <details>
+            <summary>SELECT</summary>
+            <p>
+                SELECT ka use database se data retrieve ya
+                dekhne ke liye hota hai.
+            </p>
+        </details>
+
+        <details>
+            <summary>UPDATE</summary>
+            <p>
+                UPDATE ka use existing data ko modify karne
+                ke liye hota hai.
+            </p>
+        </details>
+
+        <details>
+            <summary>DELETE</summary>
+            <p>
+                DELETE ka use table se data remove karne
+                ke liye hota hai.
+            </p>
+        </details>
+
+        <hr>
+
+        <h3>What is a Database Object?</h3>
+
+        <p>
+            Shayad aapko "object" ka matlab samajh mein nahi aaya.
+            Basically, database object us cheez ko bolte hain jisme
+            database ka data structured way mein manage kiya jata hai.
+        </p>
+
+        <p>
+            Jaise aap maan lo ki ek library hai aur usmein books
+            idhar-udhar rakhi hui hain. Agar aapko Class 11 ki koi
+            book leni ho, to aapko poori library dhundhni padegi.
+        </p>
+
+        <p>
+            Lekin agar saari books class ke hisaab se apni-apni
+            jagah par rakhi hui hain, to unhe dhundhna bahut
+            aasaan ho jata hai.
+        </p>
+
+        <p>
+            Waise hi, agar public ke dwara diya hua data, jaise
+            naam, ID, roll number aur phone number, ek structured
+            format mein rakha ho, to kisi particular person ka
+            data nikalna aasaan hota hai.
+        </p>
+
+        <h3>Role of DBMS</h3>
+
+        <p>
+            Isi kaam mein <b>DBMS (Database Management System)</b>
+            help karta hai.
+        </p>
+
+        <p>
+            DBMS ki help se hum databases aur tables create karte hain
+            aur unmein data ko store, manage aur retrieve karte hain.
+        </p>
+
+        <p>
+            <b>MySQL</b> ek popular relational database management
+            system (RDBMS) hai jo SQL ka use karke databases ke
+            saath kaam karta hai.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

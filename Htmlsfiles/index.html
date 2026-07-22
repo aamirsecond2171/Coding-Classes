@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Classes</title>
+
+    <style>
+        /* Remove default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Page Background */
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+
+            padding: 20px;
+        }
+
+        /* Main Card */
+        .container {
+            width: 100%;
+            max-width: 600px;
+
+            background-color: white;
+            padding: 40px 30px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Main Heading */
+        h1 {
+            color: #333;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Sub Heading */
+        h3 {
+            color: #555;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Welcome Text */
+        .game-text {
+            color: #444;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Emoji */
+        .game-text img {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+
+        /* Button Link */
+        .start-button {
+            display: inline-block;
+
+            padding: 12px 35px;
+
+            background-color: #667eea;
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 1.1rem;
+            font-weight: bold;
+
+            border-radius: 30px;
+
+            transition: 0.3s;
+        }
+
+        /* Button Hover */
+        .start-button:hover {
+            background-color: #4f63c7;
+            transform: scale(1.05);
+        }
+
+        /* Mobile Design */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 35px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            .game-text {
+                font-size: 1rem;
+            }
+
+            .start-button {
+                width: 100%;
+                max-width: 250px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Hello Bacche! 👋</h1>
+
+        <h3>Chaliye shuru krte hai........</h3>
+
+        <div class="game-text">
+            Let's begin our game...
+            <img
+                src="https://static.vecteezy.com/system/resources/previews/052/939/748/non_2x/smiling-face-emoji-isolated-on-transparent-background-free-png.png"
+                alt="Smiling Face">
+        </div>
+
+        <a href="MY_SQL.html" class="start-button">
+            Let's Go! 🚀
+        </a>
+
+    </div>
+
+</body>
+
+</html>

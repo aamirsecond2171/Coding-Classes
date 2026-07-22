@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "APPOINTMENT",
+      "request": "launch",
+      "mainClass": "APPOINTMENT",
+      "projectName": "language_37930393"
+    },
+    {
+      "type": "java",
+      "name": "APPOINTMENT",
+      "request": "launch",
+      "mainClass": "JAVA.APPOINTMENT",
+      "projectName": "language_37930393"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "language_37930393"
+    },
+    {
+      "type": "java",
+      "name": "test1",
+      "request": "launch",
+      "mainClass": "test1",
+      "projectName": "language_37930393"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Saifa Alia/OneDrive/Desktop/language",
+      "program": "c:/Users/Saifa Alia/OneDrive/Desktop/language/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
