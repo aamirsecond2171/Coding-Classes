@@ -139,6 +139,151 @@
             summary {
                 font-size: 0.95rem;
             }
+
+            ol {
+                padding-left: 20px;
+                margin-left: 10px;
+            }
+
+            ol li {
+                font-size: 0.95rem;
+            }
+
+            .sql-code,
+            .sql-example {
+                font-size: 0.85rem;
+                padding: 12px;
+            }
+
+            .important-note {
+                padding: 12px;
+            }
+
+            .congratulations {
+                padding: 20px 15px;
+            }
+
+            .congratulations h2 {
+                font-size: 1.5rem;
+            }
+
+            .congratulations p {
+                font-size: 0.95rem;
+            }
+
+            .congratulations::before {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+        }
+
+        ol {
+            margin: 15px 0 20px 25px;
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+
+        .sql-section {
+            margin-top: 20px;
+        }
+
+
+        .sql-code {
+            display: block;
+            background-color: #f4f4f4;
+            border-left: 4px solid #1e3a8a;
+            padding: 15px;
+            margin: 12px 0 20px 0;
+            border-radius: 6px;
+            font-family: "Courier New", monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+
+
+        .sql-keyword {
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+
+        .sql-example {
+            background-color: #eef4ff;
+            padding: 15px;
+            margin: 12px 0 20px 0;
+            border-radius: 8px;
+            border-left: 5px solid #1e3a8a;
+            font-family: "Courier New", monospace;
+            font-size: 0.95rem;
+            overflow-x: auto;
+        }
+
+        .important-note {
+            background-color: #e8f0fe;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 5px solid #1e3a8a;
+        }
+
+        .congratulations {
+            margin-top: 35px;
+            padding: 25px;
+            text-align: center;
+            background: linear-gradient(135deg, #eef4ff, #dbeafe);
+            border: 2px solid #1e3a8a;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(30, 58, 138, 0.15);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Animation */
+        .congratulations:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(30, 58, 138, 0.25);
+        }
+
+        /* Congratulations Heading */
+        .congratulations h2 {
+            color: #1e3a8a;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            animation: celebrate 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Message */
+        .congratulations p {
+            color: #222;
+            font-size: 1.05rem;
+            margin-bottom: 0;
+        }
+
+        /* Celebration Animation */
+        @keyframes celebrate {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Decorative Sparkles */
+        .congratulations::before {
+            content: "🎉 ✨ 🎊 ✨ 🎉";
+            display: block;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            letter-spacing: 5px;
         }
     </style>
 </head>
@@ -266,42 +411,231 @@
             saath kaam karta hai.
         </p>
         <hr>
-        <h2>Steps to code:</h2>
-        <ol>
-            <li>Sabse pehle hame Database create krna hota hai.</li>
-            <li>Fir uske andar tables create krna hota hai jo column aur  rows ke form me hota h jaise tum MS Excel me dekhi hogi.</li>
-            <li>Fir us table ke andar data dalna hota hai </li>
-            <li>Fir us pure table ho dekh skte ho jisme sara data dikhega aur us data ko access bhi kr skte ho.</li>
-        </ol>
-        <hr>
-        <h3>Chalo ab ek ek kr ke code krte h</h3>
-        <p>code kaise krogi ye soch rhi ho ? <br>
-            google pe jao aur likho online MySQL compiler. <br>
-            Online compiler me database ka koi kaam nhi hota aap direct tables bna ke aur usme kaam kr skte ho. <br>
-            Aap koi bhi online compiler open krna aur usme jo bhi likha hoga sab delete kr krne ke baad coding krna.
-        </p>
-        <p>
-            Usse pehle aap bas kuch cheez jaan lo ki jo bhi aap code krte ho usko compile krna hota h. <br>
-            ye kaam aapko khud nhi krna h, ek compiler hota h jo apke code ko compile krta h mtlb coding language ko computer ke language me <br>
-            convert krta h taki apke diye hue instructions computer samajh kr wo task kr paye jo aap coding ke zariye use krne bol rhe h. <br>
-        </p>
-        
-        <h2>
-            sabse pehle table banate h
-        </h2>
-        <p>
-            table banane ke liye syntax:- <br>
-            <b>CREATE TABLE</b> table_name ( title1 <b>VAR</b>, title2 <b>INTEGER</b>, title3 <b>VAR</b>);
-            <br>
-            Isme jo jo capital me h usko as it is likhna hota h. <br>
-            Jaha table_name likha h waha aap koi bhi naam likh skte h table ka jaise Student. <br>
-            Jaha title1 likha h waha aap koi bhi title ka naam dal skte h jaise name, admission number, roll number...etc. <br>
-            Aur bracket aur last me semicolon lagana mt bhulna. <br> <br>
-            Isse bas apka table ka structure bnega usko dekhne ke liye ye code likhna: <br>
-            <b>DESC</b> table_name; <br>
-            Isse aap jo table bnaye h uska structure dikh jayega. <br>
-            Abhi itna hi kafi h raat ko apko sikhayenge isme data dalna.
-        </p>
+
+        <div class="sql-section">
+
+            <h2>Steps to code:</h2>
+
+            <ol>
+                <li>Sabse pehle hame Database create krna hota hai.</li>
+                <li>Fir uske andar tables create krna hota hai jo column aur rows ke form me hota h jaise tum MS Excel
+                    me dekhi hogi.</li>
+                <li>Fir us table ke andar data dalna hota hai.</li>
+                <li>Fir us pure table ko dekh skte ho jisme sara data dikhega aur us data ko access bhi kr skte ho.</li>
+            </ol>
+
+            <hr>
+
+            <h3>Chalo ab ek ek kr ke code krte h</h3>
+
+            <p>
+                Code kaise krogi ye soch rhi ho?
+                <br>
+                Google pe jao aur likho <b>Online MySQL Compiler</b>.
+                <br>
+                Online compiler me database ka koi kaam nhi hota.
+                Aap direct tables bna ke aur usme kaam kr sakte ho.
+                <br>
+                Aap koi bhi online compiler open krna aur usme jo bhi likha hoga
+                sab delete krne ke baad coding krna.
+            </p>
+
+            <p>
+                Usse pehle aap bas kuch cheez jaan lo ki jo bhi aap code krte ho
+                usko compile krna hota h.
+                <br>
+                Ye kaam aapko khud nhi krna h. Ek compiler hota h jo aapke code ko
+                compile krta h, matlab coding language ko computer ke language me
+                convert krta h, taki aapke diye hue instructions computer samajh kar
+                wo task kr paye jo aap coding ke zariye use krne bol rhe h.
+            </p>
+
+            <h3>Sabse pehle table banate h</h3>
+
+            <p>
+                Table banane ke liye hum <b>CREATE TABLE</b> command ka use karte hain.
+                Table ek tarah ka structure hota hai jisme hum apna data store karte hain.
+            </p>
+
+            <div class="sql-code">
+
+                CREATE TABLE table_name (column1 VARCHAR(50), column2 INTEGER, column3 VARCHAR(15)); </div>
+
+            <p>
+                Isme jo keywords capital letters me diye gaye hain, unhe as it is likhna hota hai.
+                <br>
+                <b>table_name</b> ki jagah aap apni table ka koi bhi naam de sakte ho,
+                jaise <b>Student</b>.
+                <br>
+                Isi tarah <b>column1</b>, <b>column2</b> aur <b>column3</b> ki jagah
+                aap apne data ke according column names de sakte ho,
+                jaise <b>name</b>, <b>roll_no</b> aur <b>phone</b>.
+            </p>
+
+            <p>
+                <b>Example:</b>
+            </p>
+
+            <div class="sql-example">
+                CREATE TABLE Student (name VARCHAR(50), roll_no INTEGER, phone VARCHAR(15)); </div>
+            <p>
+                Is command se <b>Student</b> naam ki ek table create ho jayegi.
+                Is table me hum student ka naam, roll number aur phone number store kar sakte hain.
+            </p>
+
+            <div class="important-note">
+                <b>Important:</b>
+                Table create karte waqt har column ka ek data type dena zaroori hota hai.
+                <b>VARCHAR</b> ka use text ya characters ke liye aur
+                <b>INTEGER</b> ka use whole numbers ke liye kiya jata hai.
+            </div>
+
+            <p>
+                Ab agar aap apni table ka structure dekhna chahte ho,
+                to ye command likho:
+            </p>
+
+            <div class="sql-code">
+
+                DESC Student; </div>
+
+            <p>
+                Is command se aapko <b>Student</b> table ka structure dikh jayega,
+                jisme table ke andar kaun-kaun se columns hain aur unka data type kya hai,
+                ye sab information milegi.
+            </p>
+
+            <h3>Ab table me data dalte hai.</h3>
+
+            <p>
+                Table create karne ke baad uske andar data insert karna hota hai.
+                Data insert karne ke liye hum <b>INSERT INTO</b> command ka use karte hain.
+            </p>
+
+            <div class="sql-code">
+
+                INSERT INTO table_name VALUES (Value1, Value2, Value3); </div>
+
+            <p>
+                Yaha <b>table_name</b> ki jagah apni table ka naam likhna hota hai
+                aur columns ke naam ke according values deni hoti hai. <br>
+                Table ka structure bnate time jo column pehle likha tha uska value pehle dalna, <br>
+                jaise create table krte time pehle name fir roll fir admn likha h to usi hisab se value bhi dalna hoga.
+            </p>
+
+            <p>
+                <b>Example:</b>
+            </p>
+
+            <div class="sql-example">
+
+                INSERT INTO Student VALUES ('Aamir', 1, '9876543210');
+            </div>
+
+            <p>
+                Is command se <b>Student</b> table me ek student ka data insert ho jayega.
+            </p>
+
+            <p>
+                Agar aapko ek aur student ka data insert karna hai,
+                to aap isi command ka dobara use kar sakte ho.
+            </p>
+
+            <div class="sql-example">
+
+                INSERT INTO Student VALUES ('Zeenat', 2, '9876543211');
+            </div>
+
+            <p>
+                Isi tarah aap jitne students ka data store karna chahte ho,
+                utni baar <b>INSERT INTO</b> command ka use kar sakte ho.
+            </p>
+
+            <div class="important-note">
+                <b>Important:</b>
+                Text ya character values ko generally single quotes
+                <b>' '</b> ke andar likha jata hai, jaise <b>'Aamir'</b>.
+                Lekin number values ko normally quotes ke bina likha jata hai,
+                jaise <b>1</b> ya <b>2</b>.
+            </div>
+
+            <h4>Ab jo apne data dala h wo apko kaise dikhega ?</h4>
+
+            <p>
+                Table me data insert karne ke baad agar aap us data ko dekhna chahte ho,
+                to hum us data ko <b>SELECT</b> command ki help se fetch karte hain.
+            </p>
+
+            <p>
+                Agar aap table ka poora data dekhna chahte ho,
+                to ye syntax use karo:
+            </p>
+
+            <div class="sql-code">
+
+                SELECT * FROM table_name; </div>
+
+            <p>
+                <b>Example:</b>
+            </p>
+
+            <div class="sql-example">
+
+                SELECT * FROM Student; </div>
+            <p>
+                Is command se <b>Student</b> table ke andar jitna bhi data stored hai,
+                wo sab aapko dikh jayega.
+            </p>
+
+            <p>
+                Lekin maan lo ki aapko poora data nahi dekhna hai aur sirf students ke
+                naam dekhne hain, to aap sirf required column ko select kar sakte ho.
+            </p>
+
+            <div class="sql-example">
+
+                SELECT name FROM Student; </div>
+
+            <p>
+                Is command se sirf <b>name</b> column ka data show hoga.
+            </p>
+
+            <p>
+                Isi tarah agar aapko naam aur roll number dono dekhne hain,
+                to aap likh sakte ho:
+            </p>
+
+            <div class="sql-example">
+
+                SELECT name, roll_no FROM Student; </div>
+            <p>
+                Pata hai? Aap kisi condition ke according bhi data fetch kar sakte ho.
+                Jaise agar aapko sirf us student ki information chahiye jiska roll number 1 hai,
+                to aap <b>WHERE</b> clause ka use kar sakte ho.
+                Ye sab hum aage SQL me detail me seekhenge.
+            </p>
+
+
+
+
+            <div class="important-note">
+                Abhi ke liye aapko itna samajhna hai ki
+                <b>CREATE TABLE</b> se table banti hai,
+                <b>INSERT INTO</b> se table me data add hota hai,
+                aur <b>SELECT</b> se table ke andar ka data fetch ya display kiya jata hai.
+            </div>
+
+            <div class="congratulations">
+                <h2>Congratulations Zeenat!!!</h2>
+
+                <p>
+                    Aaj aapne coding kiya aur table banana,
+                    table ka structure dekhna, data dalna aur data fetch krna seekha.
+                </p>
+            </div>
+
+        </div>
+
 
     </div>
 
