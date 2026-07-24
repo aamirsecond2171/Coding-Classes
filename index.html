@@ -73,6 +73,14 @@
             vertical-align: middle;
         }
 
+        /* Button Container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
         /* Button Link */
         .start-button {
             display: inline-block;
@@ -126,6 +134,10 @@
                 max-width: 250px;
                 padding: 12px 20px;
             }
+
+            .button-container {
+                gap: 15px;
+            }
         }
     </style>
 
@@ -135,20 +147,28 @@
 
     <div class="container">
 
-        <h1>Hello Zeenat! 👋</h1>
+        <h1>Hello zeenat! 👋</h1>
 
         <h3>Chaliye shuru krte hai........</h3>
 
         <div class="game-text">
-            Let's begin our game
+            Let's begin our game...
             <img
                 src="https://static.vecteezy.com/system/resources/previews/052/939/748/non_2x/smiling-face-emoji-isolated-on-transparent-background-free-png.png"
                 alt="Smiling Face">
         </div>
 
-        <a href="MY_SQL.html" class="start-button">
-            Let's Go! 🚀
-        </a>
+        <div class="button-container">
+
+            <a href="Day1.html" class="start-button">
+                Day 1 🚀
+            </a>
+
+            <a href="Day2.html" class="start-button">
+                Day 2 🚀
+            </a>
+
+        </div>
 
     </div>
 
