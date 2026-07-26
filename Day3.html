@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+    <style>
+        div.image {
+            width: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            border-radius: 2%;
+        }
+
+        div.container {
+
+            padding: 10px;
+            background-color: rgb(156, 162, 162);
+            border-radius: 2%;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #4f46e5;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 5px rgba(79, 70, 229, 0.2);
+        }
+
+        p {
+            font-size: 17px;
+            color: #334155;
+        }
+
+        h2 {
+            color: #7c3aed;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #2563eb;
+            font-size: 25px;
+            border-left: 5px solid #2563eb;
+            padding-left: 12px;
+        }
+
+        ul,
+        ol {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 25px 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        li {
+            margin: 12px 0;
+            font-size: 17px;
+        }
+
+        div.image {
+            margin: 25px auto;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        div.image:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        div.image img {
+            display: block;
+            border-radius: 2%;
+        }
+
+        b {
+            color: #dc2626;
+        }
+
+        p:has(b) {
+            background: #ffffff;
+            padding: 18px;
+            border-left: 5px solid #6366f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #6366f1, transparent);
+            margin: 35px 0;
+        }
+
+        .congratulations {
+            margin: 50px auto 20px;
+            max-width: 800px;
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35);
+            animation: celebration 2s ease-in-out infinite alternate;
+        }
+
+        .congratulations h2 {
+            color: white;
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        .congratulations p {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        @keyframes celebration {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.02);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 21px;
+            }
+
+            p,
+            li {
+                font-size: 15px;
+            }
+
+            div.image {
+                width: 100%;
+            }
+
+            ul,
+            ol {
+                padding: 20px 25px;
+            }
+
+            .congratulations {
+                padding: 20px;
+            }
+
+            .congratulations h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hii Zeenuuuu 🤗</h1>
+    <p>
+        Pata h aapne abhi tak kitna kuch seekh liya. <br>
+        Ab ham sabse intresting kaam krenge, jo bhi seekha uska practical krna 🤩. <br> <br>
+
+        Lekin yaad rakhna ham abhi coding mobile kr rhe h online compiler ke zariye to usme apko direct table bnana h na
+        ki database. <br>
+    </p>
+    <h3>Steps:</h3>
+    <P>
+    <ul>
+        <li>Google me search karo 'MySQL online compiler' aur Onecompiler wala link pe click krna.</li>
+        <li>Usme jo bhi likha ho sabko delete kr dena.</li>
+        <li>Ab usme jo bhi code likhegi wo likhne ke baad upar Run ka button hoga usko click krna hai.</li>
+    </ul>
+    </P>
+    <h2> steps to pta chal gya ki code kaise run hoga lekin question ye hai ki likhna kya h usme.</h2>
+    <ol>
+        <li> </li>
+        <div class="image">
+            <img src="images\compiler.png" alt="blank white page" style="width:100%">
+            <div class="container">
+                <p>Tumko abhi kuch aisa dikh raha hoga</p>
+            </div>
+        </div>
+        <p>Ab isme command likho table banane ke liye. <br>
+            table_name ke jagah 'Student' likhna, <br>
+            aur column title me Name, Class, Admn, roll....ye sab dalna. <BR></BR>
+            <b>Example:</b>
+            CREATE TABLE STUDENT (Name VARCHAR(20), Class INTEGER, Admn INTEGER, Roll INTEGER);
+        </p>
+        <hr>
+        <li> </li>
+        <div class="image">
+            <img src="images/tablecreate.png" alt="create table code" style="width: 100%;">
+            <div class="container">
+                <p>Dekho aise likhna hai</p>
+            </div>
+        </div>
+        <p>
+            Ye likhne ke baad upar red color ka RUN button pe click krna hai. <br>
+            click krne ke baad tumko kuch dikhega nhi kyuki wo table bas database me create hua hai. <br>
+            Hamne bas create krne ka command diya tha output krne ka nahi isiliye kuch dikhega nahi. <br>
+            Ab ise dekne ke liye ki mera table bana hai ya nhi ham ek aur command likhenge. <br><br>
+            <b>Example:</b> DESC Student; <br>
+        </p>
+        <hr>
+        <li> </li>
+        <div class="image">
+            <img src="images/desctable.png" alt="discribe table" style="width: 100%;">
+            <div class="container">
+                <p>
+                    Dekho isme tumko output me tabel ka structure aya hai.
+                </p>
+            </div>
+        </div>
+        <p>
+            Jab bhi koi naya command likho uske baad run button pe click kro. <br><br>
+            Ab chalo isme Data dalte hai INSERT command ka use kr ke. <br><br>
+            <b>Example: </b> <br>
+            INSERT INTO Student VALUES('Aamir', 12, 14891, 1); <br>
+            INSERT INTO Student VALUES('ALIYA', 11, 93452, 14); <br>
+        </p>
+        <hr>
+        <li> </li>
+        <div class="image">
+            <img src="images/insertvalues.png" alt="insert" style="width: 100%;">
+            <div class="container">
+                <p>
+                    Jitna is picture me likha hua h utna hi likhna baki sab delete kr dena. <br>
+                </p>
+            </div>
+        </div>
+        <p>
+            Aur isme bhi kuch output nhi ayega kyuki hamlog data dal rhe h fetch nhi kr rhe na. <br>
+            Ab iske baad ek last kaam bacha h, data fetch krna. To chalo krte hai 🤩 <br>
+            <b>Example:</b> SELECT * FROM Student;
+        </p>
+        <hr>
+        <li> </li>
+        <div class="image">
+            <img src="images/fetchdata.png" alt="data fetch" style="width: 100%;">
+            <div class="container">
+                <p>
+                    Isme tumko output bhi dikhayi de raha hoga run krne ke baad. <br>
+                </p>
+            </div>
+        </div>
+
+    </ol>
+    <div class="congratulations">
+        <h2>Congratulations Zeenat!!!</h2>
+
+        <p>
+            Aaj aapne khudse apna pehla coding kiyaaaaa🥳🥳.
+        </p>
+    </div>
+</body>
+
+</html>
